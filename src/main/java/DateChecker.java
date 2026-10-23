@@ -27,7 +27,13 @@ public class DateChecker {
         if(Arrays.asList(monthThirtyOneDays).contains(month)){
             return true;
         }
-        else {
+        if(month == month.FEBRUARY){
+            return false;
+        }
+        if(month == null){
+            throw new IllegalArgumentException("Month cannot be null.");
+        }
+        else{
             return false;
         }
     }
