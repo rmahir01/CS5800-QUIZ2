@@ -24,14 +24,14 @@ public class DateChecker {
                                                       Month.AUGUST, Month.OCTOBER, Month.DECEMBER};
 
     public boolean has31Days(Month month){
-        if(Arrays.asList(monthThirtyOneDays).contains(month)){
-            return true;
+        if(month == null){
+            throw new IllegalArgumentException("Month cannot be null.");
         }
         if(month == month.FEBRUARY){
             return false;
         }
-        if(month == null){
-            throw new IllegalArgumentException("Month cannot be null.");
+        if(Arrays.asList(monthThirtyOneDays).contains(month)){
+            return true;
         }
         else{
             return false;
