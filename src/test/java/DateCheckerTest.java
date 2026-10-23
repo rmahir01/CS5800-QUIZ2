@@ -32,7 +32,7 @@ public class DateCheckerTest {
 
     @Test
     public void testNullMonthThrowsException() {
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> dateChecker.has31Days(DateChecker.Month.MAY));
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> dateChecker.has31Days(null));
         String expectedMessage = "Month cannot be null.";
         String actualMessage = exception.getMessage();
         assertEquals(expectedMessage, actualMessage);
