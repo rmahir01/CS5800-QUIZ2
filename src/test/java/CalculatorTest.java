@@ -25,7 +25,7 @@ public class CalculatorTest {
 
     @Test
     public void testSumWithZero() {
-        int expected = 2;
+        int expected = 5;
         int actual = calculator.sum(5, 0);
         assertEquals(expected, actual);
     }
