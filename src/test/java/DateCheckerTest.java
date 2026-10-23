@@ -27,7 +27,7 @@ public class DateCheckerTest {
 
     @Test
     void testFebruaryDoesNotHave31Days() {
-        assertTrue(dateChecker.has31Days(DateChecker.Month.FEBRUARY), "February has 28 days in a common year or 29 days in a leap year");
+        assertFalse(dateChecker.has31Days(DateChecker.Month.FEBRUARY), "February has 28 days in a common year or 29 days in a leap year");
     }
 }
 
