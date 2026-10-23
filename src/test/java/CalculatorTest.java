@@ -67,7 +67,7 @@ public class CalculatorTest {
 
     @Test
     public void testMultiplyWithNegativeValue() {
-        int expected = 6;
+        int expected = -6;
         int actual = calculator.multiply(-3, 2);
         assertEquals(expected, actual);
     }
