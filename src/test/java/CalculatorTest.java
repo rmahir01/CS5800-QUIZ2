@@ -82,7 +82,7 @@ public class CalculatorTest {
     @Test
     public void testDivideByZero() {
         assertThrows(ArithmeticException.class, () -> {
-            calculator.divide(5, 5);
+            calculator.divide(5, 0);
         });
     }
 
