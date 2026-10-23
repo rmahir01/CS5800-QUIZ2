@@ -81,9 +81,10 @@ public class CalculatorTest {
 
     @Test
     public void testDivideByZero() {
-        assertThrows(ArithmeticException.class, () -> {
-            calculator.divide(5, 0);
-        });
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> calculator.divide(5,0));
+        String expectedMessage = "Ints can NOT be divided by zero.";
+        String actualMessage = exception.getMessage();
+        assertEquals(expectedMessage, actualMessage);
     }
 
     @Test
