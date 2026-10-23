@@ -32,7 +32,7 @@ public class CalculatorTest {
 
     @Test
     public void testSubtractWithNegativeValues() {
-        int expected = -3;
+        int expected = 1;
         int actual = calculator.subtract(-1, -2);
         assertEquals(expected, actual);
     }
