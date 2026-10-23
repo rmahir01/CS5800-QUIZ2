@@ -87,6 +87,13 @@ public class CalculatorTest {
     }
 
     @Test
+    public void testDivideWithNegativeValue() {
+        int expected = 2;
+        int actual = calculator.divide(-6, 3);
+        assertEquals(expected, actual);
+    }
+
+    @Test
     public void testIsEven() {
         boolean actual = calculator.isEven(2);
         assertTrue(actual);
