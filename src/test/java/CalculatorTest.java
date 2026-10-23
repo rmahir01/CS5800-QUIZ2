@@ -29,6 +29,13 @@ public class CalculatorTest {
         int actual = calculator.multiply(1,2);
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testDivide() {
+        int expected = 3;
+        int actual = calculator.divide(3,2);
+        assertEquals(expected, actual);
+    }
 }
 
 
