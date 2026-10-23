@@ -80,6 +80,13 @@ public class CalculatorTest {
     }
 
     @Test
+    public void testDivideByZero() {
+        assertThrows(ArithmeticException.class, () -> {
+            calculator.divide(5, 5);
+        });
+    }
+
+    @Test
     public void testIsEven() {
         boolean actual = calculator.isEven(2);
         assertTrue(actual);
