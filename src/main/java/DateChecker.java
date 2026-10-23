@@ -1,6 +1,8 @@
 //CS5800 - QUIZ 2
 //RAJ AHIR - 019330454
 
+import java.util.Arrays;
+
 public class DateChecker {
 
     public enum Month {
@@ -22,6 +24,11 @@ public class DateChecker {
                                                       Month.AUGUST, Month.OCTOBER, Month.DECEMBER};
 
     public boolean has31Days(Month month){
-        return false;
+        if(Arrays.asList(monthThirtyOneDays).contains(month)){
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }
