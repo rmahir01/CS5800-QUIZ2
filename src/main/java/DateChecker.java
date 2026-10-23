@@ -1,6 +1,6 @@
 //CS5800 - QUIZ 2
 //RAJ AHIR - 019330454
-/
+
 public class DateChecker {
 
     public enum Month {
@@ -18,4 +18,10 @@ public class DateChecker {
         DECEMBER
     }
 
+    private DateChecker.Month[] monthThirtyOneDays = {Month.JANUARY, Month.MARCH, Month.MAY, Month.JULY,
+                                                      Month.AUGUST, Month.OCTOBER, Month.DECEMBER};
+
+    public boolean has31Days(Month month){
+        return false;
+    }
 }
