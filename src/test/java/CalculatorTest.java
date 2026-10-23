@@ -46,7 +46,7 @@ public class CalculatorTest {
 
     @Test
     public void testSubtractWithZero() {
-        int expected = 2;
+        int expected = 3;
         int actual = calculator.subtract(3, 0);
         assertEquals(expected, actual);
     }
