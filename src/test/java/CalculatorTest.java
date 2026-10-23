@@ -88,7 +88,7 @@ public class CalculatorTest {
 
     @Test
     public void testDivideWithNegativeValue() {
-        int expected = 2;
+        int expected = -2;
         int actual = calculator.divide(-6, 3);
         assertEquals(expected, actual);
     }
