@@ -59,6 +59,13 @@ public class CalculatorTest {
     }
 
     @Test
+    public void testMultiplyWithZero() {
+        int expected = 2;
+        int actual = calculator.multiply(3, 0);
+        assertEquals(expected, actual);
+    }
+
+    @Test
     public void testDivide() {
         int expected = 2;
         int actual = calculator.divide(2,1);
