@@ -60,7 +60,7 @@ public class CalculatorTest {
 
     @Test
     public void testMultiplyWithZero() {
-        int expected = 2;
+        int expected = 0;
         int actual = calculator.multiply(3, 0);
         assertEquals(expected, actual);
     }
