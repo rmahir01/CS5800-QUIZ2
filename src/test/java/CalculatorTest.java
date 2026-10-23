@@ -36,6 +36,13 @@ public class CalculatorTest {
         int actual = calculator.divide(2,1);
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testIsEven() {
+        boolean expected = true;
+        boolean actual = calculator.isEven(2);
+        assertEquals(expected, actual);
+    }
 }
 
 
